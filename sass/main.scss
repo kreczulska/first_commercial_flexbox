@@ -24,6 +24,49 @@ body {
 	background-color: $white;
 }
 
+.burger-btn {
+	position: fixed;
+	top: 10px;
+	right: 20px;
+	padding: 1em;
+	background: none;
+	border: 1px solid transparent;
+	cursor: pointer;
+	z-index: 100;
+
+	&:focus {
+		outline: none;
+		border: 1px solid $main-color;
+		border-radius: 8px;
+	}
+	&__box {
+		position: relative;
+		width: 40px;
+		height: 24px;
+	}
+
+	&__bars,
+	&__bars::after,
+	&__bars::before {
+		content: '';
+		position: absolute;
+		right: 0;
+		height: 3px;
+		width: 100%;
+		border-radius: 5px;
+		background-color: $dark;
+		// transition: width .3s;
+	}
+	&__bars {
+		&::after {
+			top: 12px;
+		}
+		&::before {
+			top: 24px;
+		}
+	}
+	
+}
 .nav {
 	position: sticky;
 	display: flex;
@@ -32,6 +75,7 @@ body {
 	width: 100%;
 	margin: 0.5em 0;
 	// background-color: #fff;
+	z-index: 100;
 
 	&__logo {
 		margin-left: 10%;
