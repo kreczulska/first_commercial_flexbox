@@ -1,0 +1,52 @@
+@use 'colors' as *;
+@use 'components' as *;
+@use 'animations' as *;
+@use 'small' as *;
+@use 'medium' as *;
+@use 'large' as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	background-color: $white;
+}
+
+.nav {
+	position: sticky;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin: 0.5em 0;
+	// background-color: #fff;
+
+	&__logo {
+		margin-left: 10%;
+	}
+	&__logo-img {
+		display: block;
+		height: 3em;
+	}
+	&__items {
+		margin-right: 10%;
+	}
+	&__item {
+		text-transform: uppercase;
+		text-decoration: none;
+		color: $main-color;
+		padding: 1em;
+	}
+}

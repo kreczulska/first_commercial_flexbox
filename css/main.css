@@ -1,0 +1,55 @@
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 2000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-padding {
+  padding: 6em 2em;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #f9f6f6;
+}
+
+.nav {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0.5em 0;
+}
+.nav__logo {
+  margin-left: 10%;
+}
+.nav__logo-img {
+  display: block;
+  height: 3em;
+}
+.nav__items {
+  margin-right: 10%;
+}
+.nav__item {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #F35588;
+  padding: 1em;
+}/*# sourceMappingURL=main.css.map */
