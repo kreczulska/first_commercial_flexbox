@@ -1,0 +1,18 @@
+@media (min-width: 1200px) {
+    nav.nav-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    nav.nav {
+        display: none;
+    }
+    
+    nav.nav-mobile {
+        
+        .nav-mobile__item {
+            font-size: 2.5rem;
+        }
+    }
+}
