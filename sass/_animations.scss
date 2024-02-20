@@ -1,0 +1,13 @@
+.bbtn-animation-open .burger-btn__bars::after {
+    transform: rotate(-45deg) translate(-7px, 10px);
+    width: 110%;
+}
+
+.bbtn-animation-open .burger-btn__bars::before {
+    transform: rotate(45deg) translate(-7px, -10px);
+    width: 110%;
+}
+
+.bbtn-animation-open .burger-btn__bars {
+    background-color: transparent;
+}
