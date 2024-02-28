@@ -1,9 +1,18 @@
 @media (min-width: 1200px) {
-    nav.nav-mobile {
+    .nav-mobile {
         display: none;
     }
-    button.burger-btn {
+    .nav-mobile__logo {
         display: none;
+    }
+    .burger-btn {
+        display: none;
+    }
+
+    .nav {
+        &__item {
+            font-size: 1.8rem;
+        }
     }
 }
 
