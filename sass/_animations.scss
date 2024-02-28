@@ -1,0 +1,35 @@
+@use 'colors' as *;
+
+.bbtn-animation-open .burger-btn__bars::after {
+	transform: rotate(-45deg) translate(-7px, 10px);
+	width: 110%;
+}
+
+.bbtn-animation-open .burger-btn__bars::before {
+	transform: rotate(45deg) translate(-7px, -10px);
+	width: 110%;
+}
+
+.bbtn-animation-open .burger-btn__bars {
+	background-color: transparent;
+}
+
+.link-animation {
+	overflow: hidden;
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 0.7em;
+		left: 0;
+		height: 2px;
+		width: 100%;
+		background-color: $main-color;
+		transition: transform 0.3s;
+		transform: scaleX(0) scaleY(0);
+		transform-origin: right;
+	}
+	&:hover::after {
+		transform: scaleX(1) scaleY(-100%);
+		transform-origin: left;
+	}
+}
