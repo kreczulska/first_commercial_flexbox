@@ -2,7 +2,7 @@ const nav = document.querySelector('.nav-mobile');
 const navBtn = document.querySelector('.burger-btn');
 const allNavItems = document.querySelectorAll('.nav-mobile__item');
 
-const openNav = () => {
+const toggleNav = () => {
 	nav.classList.toggle('nav-mobile--active');
 	navBtn.classList.toggle('bbtn-animation-open');
 	allNavItems.forEach((item) => {
@@ -13,4 +13,4 @@ const openNav = () => {
 	});
 };
 
-navBtn.addEventListener('click', openNav);
+navBtn.addEventListener('click', toggleNav);

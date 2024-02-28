@@ -70,7 +70,7 @@ body {
 	&--active {
 		transform: translateX(0%);
 	}
-	
+
 	&__item {
 		display: block;
 		padding: 1em;
@@ -89,6 +89,6 @@ body {
 	}
 	&__logo-img {
 		display: block;
-		height: 3em;
+		height: 3.2em;
 	}
 }
