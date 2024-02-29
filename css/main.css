@@ -1,9 +1,6 @@
 .container {
   margin: 0 auto;
-  width: 100%;
-  max-width: 2000px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100dvw;
 }
 
 .section-padding {
@@ -52,36 +49,18 @@
 
 .bbtn-animation-open .burger-btn__bars::after {
   transform: rotate(-45deg) translate(-7px, 10px);
-  width: 110%;
 }
 
 .bbtn-animation-open .burger-btn__bars::before {
   transform: rotate(45deg) translate(-7px, -10px);
-  width: 110%;
 }
 
 .bbtn-animation-open .burger-btn__bars {
   background-color: transparent;
 }
 
-.link-animation {
-  overflow: hidden;
-}
-.link-animation::after {
-  content: "";
-  position: absolute;
-  bottom: 0.7em;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  background-color: #F35588;
-  transition: transform 0.3s;
-  transform: scaleX(0) scaleY(0);
-  transform-origin: right;
-}
-.link-animation:hover::after {
-  transform: scaleX(1) scaleY(-100%);
-  transform-origin: left;
+.link-animation:hover {
+  color: #121212;
 }
 
 @media (min-width: 1200px) {
@@ -158,7 +137,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   background-color: #f9f6f6;
   transform: translateX(-100%);
   transition: transform 0.5s;
